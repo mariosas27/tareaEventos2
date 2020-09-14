@@ -139,6 +139,8 @@ public class Principal {
         
         if(resultadoRemove){
             System.out.println("\n********** ALUMNO BORRADO ***********");
+            System.out.println("Nueva Lista: ");
+            opLista.mostrarLista(listaAlumnos);
             
         }else{
             System.out.println("\n********** ALUMNOS NO ECNCONTRADOS ************");
