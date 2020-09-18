@@ -68,7 +68,7 @@ public class Principal {
     
     public static LinkedList<Alumno> cargarAlumnos(){
         Lectura lectura = new Lectura(); 
-      
+        //Se coloca el nombre del archivo de donde se traera la informacion de los alumnos(esta en la raiz del proyecto)
         return lectura.leerAlumnos("alumnos.dat");
     }
     
@@ -129,7 +129,7 @@ public class Principal {
     }
     public static void borraAlumno(LinkedList listaAlumnos){
         Scanner sc = new Scanner(System.in);
-        System.out.println("\n\n----------------- BUSQUEDA DE ALUMNOS POR LICENCIATURA --------------");
+        System.out.println("\n\n----------------- BORRAR ALUMNO POR MATRICULA --------------");
         System.out.println("Escribe la matricula: ");
         String matricula = sc.next();
      
@@ -143,7 +143,7 @@ public class Principal {
             opLista.mostrarLista(listaAlumnos);
             
         }else{
-            System.out.println("\n********** ALUMNOS NO ECNCONTRADOS ************");
+            System.out.println("\n********** ALUMNO NO ECNCONTRADO ************");
         }
         
     }
